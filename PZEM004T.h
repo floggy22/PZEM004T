@@ -8,7 +8,7 @@
 #endif
 
 // #define PZEM004_NO_SWSERIAL
-
+/*
 #if (not defined(PZEM004_NO_SWSERIAL)) && (defined(__AVR__) || defined(ESP8266))
 #define PZEM004_SOFTSERIAL
 #endif
@@ -16,6 +16,7 @@
 #if defined(PZEM004_SOFTSERIAL)
 #include <SoftwareSerial.h>
 #endif
+*/
 
 #include <IPAddress.h>
 
@@ -34,6 +35,7 @@ class PZEM004T
 public:
     PZEM004T(uint8_t receivePin, uint8_t transmitPin);
     PZEM004T(HardwareSerial *port);
+    PZEM004T(HardwareSerial *port, uint8_t receivePin, uint8_t transmitPin);
     ~PZEM004T();
 
     void setReadTimeout(unsigned long msec);
