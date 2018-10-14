@@ -1,5 +1,5 @@
 # PZEM004T
-Arduino communication library for Peacefair PZEM-004T Energy monitor 
+Arduino communication library for Peacefair PZEM-004T Energy monitor   
 Remove softserial and add hardware multi hardware uart for esp32.
 
 Serial communication    
