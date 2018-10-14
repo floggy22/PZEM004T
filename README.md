@@ -1,5 +1,6 @@
 # PZEM004T
 Arduino communication library for Peacefair PZEM-004T Energy monitor 
+Remove softserial and add hardware multi hardware uart for esp32.
 
 Serial communication    
 This module is equipped with TTL serial data communication interface, you can read and set the relevant parameters via the serial port; but if you want to communicate with a device which has USB or RS232 (such as computer), you need to be equipped with different TTL pin board (USB communication needs to be equipped with TTL to USB pin board; RS232 communication needs to be equipped with TTL to RS232 pin board), the specific connection type as shown in Figure 2. In the below table are the communication protocols of this module: 
