@@ -40,6 +40,13 @@ PZEM004T::PZEM004T(HardwareSerial *port)
     this->_isSoft = false;
 }
 
+PZEM004T::PZEM004T(HardwareSerial *port, uint8_t receivePin, uint8_t transmitPin)
+{
+    port->begin(PZEM_BAUD_RATE, SERIAL_8N1, receivePin, transmitPin);    
+    this->serial = port;
+    this->_isSoft = false;
+}
+
 PZEM004T::~PZEM004T()
 {
     if(_isSoft)
